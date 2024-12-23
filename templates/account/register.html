@@ -18,7 +18,7 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card shadow-sm">
-          <div class="card-header text-center bg-secondary text-white">
+          <div class="card-header text-center text-white" style="background-color: #D19C97;">
             <h3>Sign Up</h3>
           </div>
           <div class="card-body">
@@ -50,12 +50,12 @@
 
               <!-- Submit Button -->
               <div class="d-grid">
-                <button type="submit" class="btn btn-secondary" onclick="showAlert()" >Sign Up</button>
+                <button type="submit" class="btn btn- text-white" style="background-color: #D19C97;" onclick="showAlert()" >Sign Up</button>
               </div>
             </form>
           </div>
           <div class="card-footer text-center">
-            <small>Already have an account? <a href="{% url 'login' %} m">Log In</a></small>
+            <small style="color: #D19C97;">Already have an account? <a href="{% url 'login' %}" style="color: #D19C97;">Log In</a></small>
           </div>
         </div>
       </div>

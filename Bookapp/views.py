@@ -19,7 +19,7 @@ def createBook(request):
 
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('booklist')
     else:
         form=BookForm()
 
@@ -35,7 +35,7 @@ def create_Author(request):
         if form.is_valid():
             form.save()
 
-            return redirect('/')
+            return redirect('booklist')
     else:
         form=AuthorForm()
 
@@ -99,7 +99,7 @@ def deleteview(request,book_id):
     if request.method=='POST':
         book.delete()
 
-        return  redirect('/')
+        return  redirect('booklist')
 
     return  render(request,'admin/delete.html',{'book':book})
 

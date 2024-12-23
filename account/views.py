@@ -107,7 +107,7 @@ def loginPage(request):
 
                 if type=='user':
                     request.session['username']=user_name
-                    return redirect('user_view')
+                    return redirect('index')
                 elif type=='admin':
                     request.session['username']=user_name
                     return redirect('admin_view')

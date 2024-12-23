@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container text-center mt-5 color-dark " >
-    <div class="card shadow-lg p-4" style="background-color: #D19C97;">
+    <div class="card shadow-lg p-4">
       <div class="card-body">
         <div class="icon-container text-success mb-4">
 <!--          <i class="bi bi-check-circle-fill" style="font-size: 4rem;"></i>-->
@@ -19,8 +19,8 @@
         <p class="card-text">Author: {{book.author}}</p>
         <h4>Price: {{book.price}}</h4>
         <p>Quantity: {{book.quantity}}</p>
-        <a href="{% url 'addtocart' book.id %}" class="btn btn-dark" >Add To Cart</a>
-          <a href="{% url 'userlist' %}" class="btn btn-dark" >Home</a>
+        <a href="{% url 'addtocart' book.id %}" class="btn btn- text-white" style="background-color: #D19C97;">Add To Cart</a>
+          <a href="{% url 'userlist' %}" class="btn btn- text-white" style="background-color: #D19C97;">Home</a>
       </div>
     </div>
   </div>

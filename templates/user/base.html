@@ -115,7 +115,7 @@
                             </div>
 
 
-                        <a href="" class="nav-item nav-link">Cart</a>
+                        <a href="{% url 'viewcart' %}" class="nav-item nav-link">Cart</a>
                         <a href="{% url 'userlist' %}" class="nav-item nav-link">Book List</a>
                         <a href="" class="nav-item nav-link">Contact Us</a>
 
@@ -135,18 +135,18 @@
                             <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
                             <a href="{% url 'userlist' %}" class="nav-item nav-link">Books</a>
                             <a href="{% url 'viewcart' %}" class="nav-item nav-link">Cart</a>
-<!--                            <div class="nav-item dropdown">-->
-<!--                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>-->
-<!--                                <div class="dropdown-menu rounded-0 m-0">-->
-<!--                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>-->
-<!--                                    <a href="checkout.html" class="dropdown-item">Checkout</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="{% url 'register' %}" class="dropdown-item">Register</a>
+                                    <a href="{% url 'login' %}" class="dropdown-item">Login</a>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            <a href="{% url 'login' %}" class="nav-item nav-link">Login</a>
-                            <a href="{% url 'register' %}" class="nav-item nav-link">Register</a>
+                            <a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>
+
                         </div>
                     </div>
                 </nav>
@@ -190,6 +190,10 @@
     <!-- Navbar End -->
 
     {% block content %}
+
+
+
+
     {% endblock %}
 
 
