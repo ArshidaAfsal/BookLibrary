@@ -1,0 +1,31 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--<h3>Book Details</h3>-->
+
+
+<!--<div class="card" style="width: 18rem;">-->
+<!--    <img src="{{ book.image.url }}" class="card-img-top" alt="">-->
+<!--    <div class="card-body">-->
+<!--        <p class="card-text">{{book.title}}</p>-->
+<!--        <p>{{book.price}}</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="card mt-5" style="width: 18rem;">
+  <img src="{{ book.image.url }}" class="" alt="...">
+    <h5 class="card-title text-center">Title: {{ book.title }}</h5>
+    <h5 class="card-title text-center">Price: {{ book.price }}</h5>
+    <h5 class="card-title text-center">Author: {{ book.author }}</h5>
+
+  <div class="card-body">
+<!--    <h5 class="card-title">{{ book.image.url }}</h5>-->
+    <p class="card-text">A book is a concise summary that highlights the book's key plot and characters and given readers a brief overview of what to expect</p>
+    <a href="#" class="btn btn- text-center" style="background-color: #D19C97;">Buy Now</a>
+  </div>
+</div>
+
+{% endblock %}

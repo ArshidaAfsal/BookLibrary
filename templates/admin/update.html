@@ -1,0 +1,16 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h3 class="mt-5">Update Book</h3>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.as_p}}
+
+    <input type="submit" value="update" style="background-color: #D19C97;">
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<form action="" method="post" class="mt-5">
+  {%csrf_token%}
+  {{form.as_p}}
+  <input type="submit" value="save" style="background-color: #D19C97;">
+</form>
+
+{% endblock %}
