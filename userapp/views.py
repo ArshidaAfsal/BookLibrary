@@ -1,3 +1,4 @@
+import stripe
 from django.conf import settings
 from django.contrib import auth
 from django.contrib.auth import logout
@@ -10,8 +11,6 @@ from django.db.models import Q
 from Bookapp.models import Author,Books
 from userapp.models import Cart,CartItem
 from django.urls import reverse
-import stripe
-
 
 
 
@@ -60,7 +59,7 @@ def Search_Book(request):
 
 
 def index(request):
-    return render(request,'user/base.html')
+    return render(request,'user/index.html')
 
 
 

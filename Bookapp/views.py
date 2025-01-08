@@ -107,7 +107,7 @@ def deleteview(request,book_id):
 
 
 def index(request):
-    return render(request,'admin/base.html')
+    return render(request,'admin/index.html')
 
 
 
